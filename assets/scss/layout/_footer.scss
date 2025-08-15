@@ -1,0 +1,16 @@
+.footer {
+  border-color: $custom-natural-85;
+
+  &-nav {
+    @media screen and (max-width: 992px) {
+      row-gap: 8px;
+    }
+  }
+
+  .nav-link {
+    color: $custom-black;
+    &:hover {
+      color: $custom-primary;
+    }
+  }
+}
