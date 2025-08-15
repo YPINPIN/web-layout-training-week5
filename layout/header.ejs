@@ -6,7 +6,7 @@
         ><img src="../assets/images/logo.svg" alt="nav-logo"
       /></a>
       <button
-        class="navbar-toggler"
+        class="navbar-toggler border-0 order-1 header-nav-toggler"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
@@ -14,9 +14,11 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="material-icons-outlined" style="vertical-align: middle">
+          menu
+        </span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse order-1 order-lg-0" id="navbarNav">
         <ul class="navbar-nav header-nav-list mx-auto">
           <li class="nav-item">
             <a class="nav-link px-4" href="#">服務方案</a>
@@ -28,15 +30,18 @@
             <a class="nav-link px-4" href="#">聯絡我們</a>
           </li>
         </ul>
-        <a href="#" class="fw-medium d-flex align-items-center header-nav-user">
-          <img
-            src="../assets/images/avatar/avatar.png"
-            alt="user-avatar"
-            class="border rounded-circle me-2 header-nav-avatar"
-          />
-          <span>Mokumaru</span>
-        </a>
       </div>
+      <a
+        href="#"
+        class="fw-medium ms-auto ms-lg-0 me-3 d-flex align-items-center header-nav-user"
+      >
+        <img
+          src="../assets/images/avatar/avatar.png"
+          alt="user-avatar"
+          class="border rounded-circle me-2 header-nav-avatar"
+        />
+        <span>Mokumaru</span>
+      </a>
     </div>
   </nav>
 </header>
