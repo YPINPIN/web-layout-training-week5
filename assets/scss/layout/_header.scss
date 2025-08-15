@@ -1,0 +1,36 @@
+.header-nav {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: $custom-white;
+  border-bottom: 1px solid $custom-natural-85;
+
+  &-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &-list {
+    gap: 12px;
+
+    .nav-link {
+      color: $custom-black;
+      &:hover {
+        color: $custom-primary;
+      }
+    }
+  }
+
+  &-user {
+    line-height: 1.2;
+    letter-spacing: 0;
+    &:hover {
+      color: $custom-primary;
+    }
+  }
+
+  &-avatar {
+    width: 44px;
+    height: 44px;
+    --bs-border-color: $custom-natural-85;
+  }
+}

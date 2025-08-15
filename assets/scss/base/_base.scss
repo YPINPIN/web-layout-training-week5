@@ -2,11 +2,19 @@
 // Inter、Noto Sans TC
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+TC:wght@100..900&display=swap');
 
+// custom color
+$custom-primary: #4a69e8;
+$custom-secondary: #36c99f;
+$custom-black: #141a1f;
+$custom-white: #fcfcfd;
+
+$custom-natural-85: #d1d9e1;
+
 body {
   font-family: 'Inter', 'Noto Sans TC', sans-serif;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #141a1f;
+  color: $custom-black;
 }
 
 img {
