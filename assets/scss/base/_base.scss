@@ -1,0 +1,34 @@
+// google fonts
+// Inter、Noto Sans TC
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+TC:wght@100..900&display=swap');
+
+body {
+  font-family: 'Inter', 'Noto Sans TC', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #141a1f;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
