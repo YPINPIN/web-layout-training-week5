@@ -52,5 +52,11 @@
     --bs-navbar-toggler-padding-y: 10px;
     --bs-navbar-toggler-padding-x: 10px;
     --bs-navbar-toggler-focus-width: 1px;
+
+    &:hover,
+    &:focus {
+      background-color: $custom-natural-90;
+      box-shadow: none;
+    }
   }
 }
