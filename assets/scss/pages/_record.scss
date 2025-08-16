@@ -1,0 +1,42 @@
+.record-tabs {
+  column-gap: 8px;
+
+  &.nav {
+    --bs-nav-link-padding-x: 20px;
+    --bs-nav-link-padding-y: 10px;
+
+    .nav-link {
+      color: $custom-black;
+
+      &:hover {
+        color: $custom-black;
+      }
+      &.active {
+        color: $custom-white;
+        background-color: $custom-black;
+      }
+    }
+  }
+
+  &.nav-pills {
+    --bs-nav-pills-border-radius: 16px;
+  }
+
+  &-dropdown {
+    padding: 10px 20px;
+
+    &-icon {
+      font-size: 20px;
+    }
+  }
+}
+
+.record-table {
+  thead th {
+    padding: 12px;
+  }
+  tbody th,
+  tbody td {
+    padding: 16px 12px;
+  }
+}

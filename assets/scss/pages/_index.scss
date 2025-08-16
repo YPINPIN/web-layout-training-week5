@@ -1,0 +1,29 @@
+.index-tabs {
+  column-gap: 24px;
+
+  &.nav {
+    --bs-nav-link-padding-x: 20px;
+    --bs-nav-link-padding-y: 10px;
+
+    .nav-link {
+      color: $custom-black;
+
+      &:hover {
+        color: $custom-black;
+      }
+      &.active {
+        color: $custom-black;
+        background-color: $custom-natural-90;
+      }
+    }
+  }
+
+  &.nav-pills {
+    --bs-nav-pills-border-radius: 16px;
+  }
+
+  &-icon {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

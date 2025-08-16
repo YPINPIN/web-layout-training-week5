@@ -1,0 +1,47 @@
+// custom color
+$custom-primary: #4a69e8;
+$custom-secondary: #36c99f;
+$custom-black: #141a1f;
+$custom-white: #fcfcfd;
+
+$custom-natural-50: #667f99;
+$custom-natural-60: #8599ad;
+$custom-natural-85: #d1d9e1;
+$custom-natural-90: #e0e5eb;
+$custom-natural-95: #f0f3f5;
+
+.c-bg-white {
+  background-color: $custom-white;
+}
+.c-bg-black {
+  background-color: $custom-black;
+}
+.c-bg-secondary {
+  background-color: $custom-natural-95;
+}
+.c-text-primary {
+  color: $custom-primary;
+}
+.c-text-secondary {
+  color: $custom-natural-50;
+}
+.c-text-natural-60 {
+  color: $custom-natural-60;
+}
+
+// font sizes
+.font-sm {
+  font-size: 0.875rem; // 14px
+}
+
+@media screen and (max-width: 992px) {
+  .font-sm-sm {
+    font-size: 0.875rem; // 14px
+  }
+}
+
+// spacing
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}

@@ -4,6 +4,7 @@
 @import '../../node_modules/bootstrap';
 
 // base
+@import './base/helpers';
 @import './base/base';
 
 // layout
@@ -11,3 +12,6 @@
 @import './layout/footer';
 
 // pages
+@import './pages/index';
+@import './pages/record';
+@import './pages/plan';
