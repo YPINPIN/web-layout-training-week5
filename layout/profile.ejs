@@ -16,12 +16,17 @@
         />
         <label
           for="avatar-file"
-          class="form-label btn border rounded-4 py-2 px-3 mb-0"
+          class="form-label btn btn-outline-dark border-secondary-subtle rounded-4 py-2 px-3 mb-0"
           ><span class="material-icons-outlined fs-5 align-middle pb-1 me-1">
             file_upload </span
           >更新頭貼</label
         >
-        <input class="form-control d-none" type="file" id="avatar-file" />
+        <input
+          class="form-control d-none"
+          type="file"
+          name="avatar"
+          id="avatar-file"
+        />
       </div>
       <!-- 姓名 -->
       <div class="mb-4">
@@ -29,6 +34,7 @@
           <input
             type="text"
             class="form-control"
+            name="name"
             id="name"
             placeholder="姓名"
             value="Mokumaru"
@@ -79,6 +85,7 @@
           <input
             type="date"
             class="form-control"
+            name="birthday"
             id="birthday"
             placeholder="生日"
             value="2000-01-10"
@@ -91,7 +98,7 @@
         <p class="mb-2">密碼</p>
         <button
           type="button"
-          class="btn border rounded-4 ps-3 pe-2 me-4"
+          class="btn btn-outline-dark border-secondary-subtle rounded-4 ps-3 pe-2 me-4"
           data-bs-toggle="modal"
           data-bs-target="#passwordModal"
         >
@@ -127,6 +134,7 @@
                   <input
                     type="password"
                     class="form-control"
+                    name="password"
                     id="new-password"
                     placeholder="新密碼"
                   />
@@ -136,6 +144,7 @@
                   <input
                     type="password"
                     class="form-control"
+                    name="comfirm-password"
                     id="comfirm-password"
                     placeholder="再次密碼"
                   />
@@ -165,6 +174,7 @@
           <input
             type="email"
             class="form-control"
+            name="email"
             aria-describedby="emailHelpBlock"
             id="email"
             placeholder="信箱"
@@ -182,6 +192,7 @@
           <input
             type="tel"
             class="form-control"
+            name="phone"
             id="phone"
             placeholder="聯絡電話"
             value="09-1234-5678"
@@ -195,6 +206,7 @@
           <input
             type="text"
             class="form-control"
+            name="address"
             id="address"
             placeholder="通訊地址"
             value="高雄市三民區九如一路 87 號"
@@ -206,7 +218,10 @@
   </section>
   <!-- profile form button action -->
   <div class="text-center">
-    <button type="button" class="btn border rounded-4 ps-3 pe-2 me-4">
+    <button
+      type="button"
+      class="btn btn-outline-dark border-secondary-subtle rounded-4 ps-3 pe-2 me-4"
+    >
       重新填寫<span class="material-icons-outlined fs-5 align-middle pb-1 ms-1">
         chevron_right
       </span>
