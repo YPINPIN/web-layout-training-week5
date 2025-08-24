@@ -21,6 +21,7 @@
               name="job"
               id="fullTime"
               value="fullTime"
+              checked
             />
             <label class="form-check-label" for="fullTime">全職上班族</label>
           </div>
@@ -173,6 +174,7 @@
               name="salary"
               id="0-3"
               value="0-3"
+              checked
             />
             <label class="form-check-label" for="0-3">3 萬以下</label>
           </div>
@@ -223,8 +225,10 @@
         <div class="form-floating">
           <textarea
             class="form-control textarea-height"
+            name="job-info"
             placeholder="職業摘要（簡短描述您的專業背景和核心競爭力最多 300 字）"
             id="job-info"
+            maxlength="300"
           ></textarea>
           <label for="job-info"
             >職業摘要（簡短描述您的專業背景和核心競爭力最多 300 字）</label
@@ -236,6 +240,7 @@
         <div class="form-floating">
           <input
             type="text"
+            name="job-demo"
             class="form-control"
             id="job-demo"
             placeholder="作品案例展示"
@@ -246,12 +251,19 @@
       <!-- 附件檔案 -->
       <div>
         <p class="mb-2">附件檔案</p>
-        <label for="formFile" class="form-label btn border rounded-4 py-2 px-3"
+        <label
+          for="formFile"
+          class="form-label btn btn-outline-dark border-secondary-subtle rounded-4 py-2 px-3"
           ><span class="material-icons-outlined fs-5 align-middle pb-1 me-1">
             file_upload </span
           >上傳檔案</label
         >
-        <input class="form-control d-none" type="file" id="formFile" />
+        <input
+          class="form-control d-none"
+          type="file"
+          name="file"
+          id="formFile"
+        />
       </div>
     </div>
   </section>
@@ -271,8 +283,10 @@
         <div class="form-floating">
           <textarea
             class="form-control textarea-height"
+            name="short-career-goals"
             placeholder="1 年短期職涯目標（最多 300 字）"
             id="short-career-goals"
+            maxlength="300"
           ></textarea>
           <label for="short-career-goals"
             >1 年短期職涯目標（最多 300 字）</label
@@ -284,8 +298,10 @@
         <div class="form-floating">
           <textarea
             class="form-control textarea-height"
+            name="long-career-goals"
             placeholder="1-3 年中長期職涯願景（最多 300 字）"
             id="long-career-goals"
+            maxlength="300"
           ></textarea>
           <label for="long-career-goals"
             >1-3 年中長期職涯願景（最多 300 字）</label
@@ -303,6 +319,7 @@
               name="workMode"
               id="office"
               value="office"
+              checked
             />
             <label class="form-check-label" for="office">固定辦公室工作</label>
           </div>
@@ -347,10 +364,10 @@
               class="form-check-input"
               type="radio"
               name="workMode"
-              id="work-other"
-              value="work-other"
+              id="work-mode-other"
+              value="work-mode-other"
             />
-            <label class="form-check-label" for="work-other"
+            <label class="form-check-label" for="work-mode-other"
               >其他(請說明)</label
             >
           </div>
@@ -361,6 +378,7 @@
         <div class="form-floating">
           <input
             type="text"
+            name="target-salary"
             class="form-control"
             id="target-salary"
             placeholder="目標薪資/收入"
@@ -748,8 +766,10 @@
         <div class="form-floating">
           <textarea
             class="form-control textarea-height"
+            name="background"
             placeholder="專業背景和核心競爭力（最多300字）"
             id="background"
+            maxlength="300"
           ></textarea>
           <label for="background">專業背景和核心競爭力（最多300字）</label>
         </div>
@@ -759,8 +779,10 @@
         <div class="form-floating">
           <textarea
             class="form-control textarea-height"
+            name="professional-skills"
             placeholder="專業技能（最多300字）"
             id="professional-skills"
+            maxlength="300"
           ></textarea>
           <label for="professional-skills">專業技能（最多300字）</label>
         </div>
@@ -770,8 +792,10 @@
         <div class="form-floating">
           <textarea
             class="form-control textarea-height"
+            name="language"
             placeholder="語文能力（最多300字）"
             id="language"
+            maxlength="300"
           ></textarea>
           <label for="language">語文能力（最多300字）</label>
         </div>
@@ -780,8 +804,10 @@
       <div class="form-floating">
         <textarea
           class="form-control textarea-height"
+          name="certificate"
           placeholder="資格證照（最多300字）"
           id="certificate"
+          maxlength="300"
         ></textarea>
         <label for="certificate">資格證照（最多300字）</label>
       </div>
@@ -801,8 +827,10 @@
         <div class="form-floating">
           <textarea
             class="form-control textarea-height"
+            name="academic-background"
             placeholder="學歷背景（最多500字）"
             id="academic-background"
+            maxlength="500"
           ></textarea>
           <label for="academic-background">學歷背景（最多500字）</label>
         </div>
@@ -811,8 +839,10 @@
       <div class="form-floating">
         <textarea
           class="form-control textarea-height"
+          name="training-workshops"
           placeholder="專業培訓與工作坊（最多500字）"
           id="training-workshops"
+          maxlength="500"
         ></textarea>
         <label for="training-workshops">專業培訓與工作坊（最多500字）</label>
       </div>
@@ -820,7 +850,10 @@
   </section>
   <!-- form button action -->
   <div class="text-center">
-    <button type="button" class="btn border rounded-4 ps-3 pe-2 me-4">
+    <button
+      type="button"
+      class="btn btn-outline-dark border-secondary-subtle rounded-4 ps-3 pe-2 me-4"
+    >
       匯出 PDF<span class="material-icons-outlined fs-5 align-middle pb-1 ms-1">
         chevron_right
       </span>
